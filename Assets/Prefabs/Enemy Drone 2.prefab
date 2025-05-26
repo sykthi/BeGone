@@ -125,4 +125,4 @@ MonoBehaviour:
   HitVFX: {fileID: 6010346888549879295, guid: a16233f31dc02784d8614ee8c372bd7d, type: 3}
   Container: {fileID: 0}
   scoreValue: 10
-  hitpoint: 20
+  hitpoint: 10

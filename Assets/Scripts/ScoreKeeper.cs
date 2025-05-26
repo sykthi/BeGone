@@ -13,6 +13,6 @@ public class ScoreKeeper : MonoBehaviour
     public void IncreaseScore(int amount)
     {
         score += amount;
-        ScoreText.text = amount.ToString();
+        ScoreText.text = score.ToString();
     }
 }
