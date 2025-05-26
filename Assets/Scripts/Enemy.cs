@@ -8,11 +8,12 @@ public class Enemy : MonoBehaviour
     [SerializeField] int scoreValue = 10;
     [SerializeField] int hitpoint = 20;
 
-    ScoreKeeper scorekeeper;
+    GameManager scorekeeper;
 
+    [System.Obsolete]
     private void Start()
     {
-        scorekeeper = FindObjectOfType<ScoreKeeper>();
+        scorekeeper = FindObjectOfType<GameManager>();
     }
     private void OnParticleCollision(GameObject other)
     { 

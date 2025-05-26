@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
     void OnDisable()
     {
         movements.Disable();
-        firing.Enable();
+        firing.Disable();
     }
 
     void Update()
