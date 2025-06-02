@@ -36,6 +36,13 @@ public class PlayerController : MonoBehaviour
 
     float Xthrow, Ythrow;
 
+    SoundManager _soundManager;
+
+    private void Awake()
+    {
+        _soundManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<SoundManager>();
+    }
+
     void OnEnable()
     {
         movements.Enable();
@@ -114,6 +121,7 @@ public class PlayerController : MonoBehaviour
     {
         if(firing.ReadValue<float>() > 0.1f)
         {
+            _soundManager.PlaySFX1();
             activateLasers(true);
         }
         else

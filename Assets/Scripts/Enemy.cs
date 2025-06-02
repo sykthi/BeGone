@@ -10,6 +10,12 @@ public class Enemy : MonoBehaviour
 
     GameManager scorekeeper;
 
+    SoundManager _soundManager;
+
+    private void Awake()
+    {
+        _soundManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<SoundManager>();
+    }
     [System.Obsolete]
     private void Start()
     {
@@ -20,6 +26,7 @@ public class Enemy : MonoBehaviour
         Hit();
         if (hitpoint == 0)
         {
+            _soundManager.PlaySFX(_soundManager.Explosion1);
             Killenemy();
         }
     }
