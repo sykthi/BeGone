@@ -119,7 +119,7 @@ public class PlayerController : MonoBehaviour
 
     void fire()
     {
-        if(firing.ReadValue<float>() > 0.1f)
+        if(firing.ReadValue<float>() > 0.01f)
         {
             _soundManager.PlaySFX1();
             activateLasers(true);

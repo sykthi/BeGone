@@ -30,6 +30,7 @@ public class SoundManager : MonoBehaviour
     }
     public void PlaySFX1()
     {
+        Debug.Log("Playing SFX1");
         SfxSource.PlayOneShot(Lazer,LazerVolume);
     }
 

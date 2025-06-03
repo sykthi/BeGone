@@ -77,10 +77,17 @@ public class UI : MonoBehaviour
         //GameManager.isTimelineEnded=false;
         gameOverUI.SetActive(true);
     }
+
+    public void LoadNextLevel()
+    {
+        Time.timeScale = 1f; // Ensure time is resumed when loading next level
+        SceneManager.LoadScene("Level 0");
+    }
     public void LoadMainMenu()
     {
-        //Time.timeScale = 1f; // Ensure time is resumed when loading main menu
-        //SceneManager.LoadScene("MainMenu");
+        IsGameEnded = false;
+        Time.timeScale = 1f; // Ensure time is resumed when loading main menu
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void QuitGame()
