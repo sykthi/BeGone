@@ -1049,7 +1049,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 3086
+  m_ColorTemperature: 3526
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -4666,10 +4666,10 @@ SceneRoots:
   m_Roots:
   - {fileID: 2039648284}
   - {fileID: 377992781}
+  - {fileID: 394426515}
   - {fileID: 1478909056}
   - {fileID: 121999160}
   - {fileID: 1905366711}
   - {fileID: 951311413536620478}
   - {fileID: 7817857277886527777}
   - {fileID: 8979267099531434846}
-  - {fileID: 394426515}

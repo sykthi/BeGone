@@ -571,7 +571,6 @@ MonoBehaviour:
   vfx_explosion: {fileID: 7729888894161123354}
   ship: {fileID: 3238033988219146543}
   loadDelay: 1
-  playerController: {fileID: 7022103488264022076}
 --- !u!1001 &1467418605555569643
 PrefabInstance:
   m_ObjectHideFlags: 0
